@@ -234,7 +234,7 @@
         "type": "ui_text_input",
         "z": "c80ebb5e.294f08",
         "name": "",
-        "label": "port",
+        "label": "Port",
         "tooltip": "",
         "group": "1b214600.17935a",
         "order": 2,
