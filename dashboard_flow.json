@@ -12,7 +12,7 @@
         "z": "c80ebb5e.294f08",
         "name": "",
         "label": "IP",
-        "tooltip": "",
+        "tooltip": "xxx.xxx.xx.xx",
         "group": "1b214600.17935a",
         "order": 1,
         "width": 0,
@@ -22,7 +22,7 @@
         "delay": "100",
         "topic": "",
         "topicType": "str",
-        "x": 230,
+        "x": 350,
         "y": 160,
         "wires": [
             [
@@ -41,11 +41,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
-        "y": 320,
+        "x": 500,
+        "y": 580,
         "wires": [
             [
-                "a0241251.a9cc4",
                 "2f2aec00.4e42a4"
             ]
         ]
@@ -69,8 +68,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 200,
+        "x": 670,
+        "y": 160,
         "wires": [
             [
                 "fe2d6e02.ad949"
@@ -95,8 +94,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 800,
-        "y": 200,
+        "x": 860,
+        "y": 160,
         "wires": [
             [
                 "db2479e4.104468"
@@ -125,11 +124,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 180,
+        "x": 1030,
+        "y": 140,
         "wires": [
             [
-                "eb06ed9d.7f23f"
+                "2e8243d3.81cecc"
             ]
         ]
     },
@@ -152,11 +151,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 220,
+        "x": 1030,
+        "y": 180,
         "wires": [
             [
-                "eb06ed9d.7f23f"
+                "2e8243d3.81cecc"
             ]
         ]
     },
@@ -168,8 +167,8 @@
         "links": [
             "58d47e08.81ffc"
         ],
-        "x": 1135,
-        "y": 200,
+        "x": 1435,
+        "y": 320,
         "wires": []
     },
     {
@@ -180,8 +179,8 @@
         "links": [
             "eb06ed9d.7f23f"
         ],
-        "x": 715,
-        "y": 320,
+        "x": 275,
+        "y": 580,
         "wires": [
             [
                 "12c079b7.90c4a6"
@@ -193,6 +192,15 @@
         "type": "inject",
         "z": "c80ebb5e.294f08",
         "name": "Init with empty string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": true,
@@ -200,8 +208,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "x": 200,
-        "y": 80,
+        "x": 120,
+        "y": 320,
         "wires": [
             [
                 "1330b995.eb0626",
@@ -211,23 +219,6 @@
                 "b1910e3f.aeda2"
             ]
         ]
-    },
-    {
-        "id": "a0241251.a9cc4",
-        "type": "debug",
-        "z": "c80ebb5e.294f08",
-        "name": "After function debug node",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1210,
-        "y": 320,
-        "wires": []
     },
     {
         "id": "586c1cb2.c83214",
@@ -245,8 +236,8 @@
         "delay": "100",
         "topic": "",
         "topicType": "str",
-        "x": 230,
-        "y": 200,
+        "x": 350,
+        "y": 240,
         "wires": [
             [
                 "83e8c976.e33bc8"
@@ -282,8 +273,8 @@
         "payload": "",
         "topic": "topic",
         "topicType": "msg",
-        "x": 230,
-        "y": 240,
+        "x": 350,
+        "y": 320,
         "wires": [
             [
                 "58eacd4e.3667b4"
@@ -301,7 +292,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 490,
         "y": 160,
         "wires": [
             [
@@ -320,11 +311,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 200,
+        "x": 490,
+        "y": 240,
         "wires": [
             [
-                "2ffeee02.29d762"
+                "8ff3c894.d51f48"
             ]
         ]
     },
@@ -339,11 +330,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 240,
+        "x": 490,
+        "y": 320,
         "wires": [
             [
-                "2ffeee02.29d762"
+                "65290471.3c44bc"
             ]
         ]
     },
@@ -366,8 +357,8 @@
         "payloadType": "date",
         "topic": "topic",
         "topicType": "msg",
-        "x": 790,
-        "y": 320,
+        "x": 350,
+        "y": 580,
         "wires": [
             [
                 "cc26e2d4.ffd35"
@@ -390,8 +381,8 @@
         "delay": "100",
         "topic": "",
         "topicType": "str",
-        "x": 230,
-        "y": 280,
+        "x": 350,
+        "y": 400,
         "wires": [
             [
                 "35e2f4d7.d3e9fc"
@@ -409,11 +400,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 280,
+        "x": 490,
+        "y": 400,
         "wires": [
             [
-                "2ffeee02.29d762"
+                "cf687091.b91fa"
             ]
         ]
     },
@@ -433,8 +424,8 @@
         "delay": "100",
         "topic": "",
         "topicType": "str",
-        "x": 230,
-        "y": 320,
+        "x": 350,
+        "y": 480,
         "wires": [
             [
                 "8b91ea5.facce18"
@@ -452,11 +443,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 320,
+        "x": 490,
+        "y": 480,
         "wires": [
             [
-                "2ffeee02.29d762"
+                "fcc92a40.965618"
             ]
         ]
     },
@@ -467,12 +458,11 @@
         "name": "PUT",
         "method": "PUT",
         "path": "/api/v1/config/melsec/templates/coco",
-        "x": 890,
-        "y": 400,
+        "x": 510,
+        "y": 640,
         "wires": [
             [
-                "b0b865c8.838248",
-                "618e7104.c5f7c"
+                "b0b865c8.838248"
             ]
         ]
     },
@@ -483,11 +473,10 @@
         "name": "GET",
         "method": "GET",
         "path": "/api/v1/config/melsec/equipments",
-        "x": 910,
-        "y": 500,
+        "x": 510,
+        "y": 680,
         "wires": [
             [
-                "a35d4fb9.efc68",
                 "55785389.85be3c"
             ]
         ]
@@ -499,31 +488,13 @@
         "name": "PUT",
         "method": "PUT",
         "path": "/api/v1/config/melsec/equipments",
-        "x": 910,
-        "y": 660,
+        "x": 510,
+        "y": 800,
         "wires": [
             [
-                "811fff50.96ce2",
-                "c156d41c.e70a28"
+                "811fff50.96ce2"
             ]
         ]
-    },
-    {
-        "id": "a35d4fb9.efc68",
-        "type": "debug",
-        "z": "c80ebb5e.294f08",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1060,
-        "y": 500,
-        "wires": []
     },
     {
         "id": "55785389.85be3c",
@@ -536,8 +507,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 560,
+        "x": 510,
+        "y": 720,
         "wires": [
             [
                 "6fb54257.4f2efc"
@@ -555,8 +526,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 600,
+        "x": 510,
+        "y": 760,
         "wires": [
             [
                 "9678c9d6.d9ea48"
@@ -574,12 +545,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 720,
+        "x": 510,
+        "y": 840,
         "wires": [
             [
-                "a7b8e1c3.a92ae",
-                "c644035d.53489"
+                "a7b8e1c3.a92ae"
             ]
         ]
     },
@@ -589,81 +559,565 @@
         "z": "c80ebb5e.294f08",
         "name": "",
         "equipmentId": "coco",
-        "x": 1090,
-        "y": 720,
+        "x": 690,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e8243d3.81cecc",
+        "type": "function",
+        "z": "c80ebb5e.294f08",
+        "name": "",
+        "func": "global.set(\"ip_bool\",msg.enabled)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 160,
         "wires": [
             [
-                "4e7d12eb.49c5ec"
+                "5abf9b95.ab1594"
             ]
         ]
     },
     {
-        "id": "618e7104.c5f7c",
-        "type": "debug",
+        "id": "8ff3c894.d51f48",
+        "type": "change",
         "z": "c80ebb5e.294f08",
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1130,
+        "rules": [
+            {
+                "t": "set",
+                "p": "textInput",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "e11787a8.545618"
+            ]
+        ]
+    },
+    {
+        "id": "e11787a8.545618",
+        "type": "switch",
+        "z": "c80ebb5e.294f08",
+        "name": "is text empty?",
+        "property": "textInput",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 860,
+        "y": 240,
+        "wires": [
+            [
+                "44a72a55.41fd14"
+            ],
+            [
+                "5f2d73f5.dbec0c"
+            ]
+        ]
+    },
+    {
+        "id": "44a72a55.41fd14",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "enabled false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 220,
+        "wires": [
+            [
+                "7d47839.b48417c"
+            ]
+        ]
+    },
+    {
+        "id": "5f2d73f5.dbec0c",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "enabled true",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 260,
+        "wires": [
+            [
+                "7d47839.b48417c"
+            ]
+        ]
+    },
+    {
+        "id": "7d47839.b48417c",
+        "type": "function",
+        "z": "c80ebb5e.294f08",
+        "name": "",
+        "func": "global.set(\"port_bool\",msg.enabled)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 240,
+        "wires": [
+            [
+                "5abf9b95.ab1594"
+            ]
+        ]
+    },
+    {
+        "id": "65290471.3c44bc",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "textInput",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 320,
+        "wires": [
+            [
+                "e1f881bd.1703a"
+            ]
+        ]
+    },
+    {
+        "id": "e1f881bd.1703a",
+        "type": "switch",
+        "z": "c80ebb5e.294f08",
+        "name": "is text empty?",
+        "property": "textInput",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 860,
+        "y": 320,
+        "wires": [
+            [
+                "b372386f.948da8"
+            ],
+            [
+                "3c3238de.351e88"
+            ]
+        ]
+    },
+    {
+        "id": "b372386f.948da8",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "enabled false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 300,
+        "wires": [
+            [
+                "e542d0d4.1fecc"
+            ]
+        ]
+    },
+    {
+        "id": "3c3238de.351e88",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "enabled true",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 340,
+        "wires": [
+            [
+                "e542d0d4.1fecc"
+            ]
+        ]
+    },
+    {
+        "id": "e542d0d4.1fecc",
+        "type": "function",
+        "z": "c80ebb5e.294f08",
+        "name": "",
+        "func": "global.set(\"rtype_bool\",msg.enabled)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 320,
+        "wires": [
+            [
+                "5abf9b95.ab1594"
+            ]
+        ]
+    },
+    {
+        "id": "cf687091.b91fa",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "textInput",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
         "y": 400,
-        "wires": []
+        "wires": [
+            [
+                "9ab52e82.080a1"
+            ]
+        ]
     },
     {
-        "id": "c644035d.53489",
-        "type": "debug",
+        "id": "9ab52e82.080a1",
+        "type": "switch",
         "z": "c80ebb5e.294f08",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 910,
-        "y": 760,
-        "wires": []
+        "name": "is text empty?",
+        "property": "textInput",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 860,
+        "y": 400,
+        "wires": [
+            [
+                "27c3cb0.4014a36"
+            ],
+            [
+                "c64f9cbd.47364"
+            ]
+        ]
     },
     {
-        "id": "c156d41c.e70a28",
-        "type": "debug",
+        "id": "27c3cb0.4014a36",
+        "type": "change",
         "z": "c80ebb5e.294f08",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1070,
-        "y": 660,
-        "wires": []
+        "name": "enabled false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 380,
+        "wires": [
+            [
+                "151135a3.30ddfa"
+            ]
+        ]
     },
     {
-        "id": "4e7d12eb.49c5ec",
-        "type": "debug",
+        "id": "c64f9cbd.47364",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "enabled true",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 420,
+        "wires": [
+            [
+                "151135a3.30ddfa"
+            ]
+        ]
+    },
+    {
+        "id": "151135a3.30ddfa",
+        "type": "function",
         "z": "c80ebb5e.294f08",
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1230,
-        "y": 720,
-        "wires": []
+        "func": "global.set(\"raddr_bool\",msg.enabled)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 400,
+        "wires": [
+            [
+                "5abf9b95.ab1594"
+            ]
+        ]
+    },
+    {
+        "id": "fcc92a40.965618",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "textInput",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 480,
+        "wires": [
+            [
+                "bbb0a31e.152b5"
+            ]
+        ]
+    },
+    {
+        "id": "bbb0a31e.152b5",
+        "type": "switch",
+        "z": "c80ebb5e.294f08",
+        "name": "is text empty?",
+        "property": "textInput",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 860,
+        "y": 480,
+        "wires": [
+            [
+                "d133ef2c.c357d"
+            ],
+            [
+                "a0a27d94.a1672"
+            ]
+        ]
+    },
+    {
+        "id": "d133ef2c.c357d",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "enabled false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 460,
+        "wires": [
+            [
+                "182a32d4.5f06dd"
+            ]
+        ]
+    },
+    {
+        "id": "a0a27d94.a1672",
+        "type": "change",
+        "z": "c80ebb5e.294f08",
+        "name": "enabled true",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 500,
+        "wires": [
+            [
+                "182a32d4.5f06dd"
+            ]
+        ]
+    },
+    {
+        "id": "182a32d4.5f06dd",
+        "type": "function",
+        "z": "c80ebb5e.294f08",
+        "name": "",
+        "func": "global.set(\"value_bool\",msg.enabled)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 480,
+        "wires": [
+            [
+                "5abf9b95.ab1594"
+            ]
+        ]
+    },
+    {
+        "id": "5abf9b95.ab1594",
+        "type": "function",
+        "z": "c80ebb5e.294f08",
+        "name": "",
+        "func": "ip_bool = global.get(\"ip_bool\")\nport_bool = global.get(\"port_bool\")\nrtype_bool = global.get(\"rtype_bool\")\nraddr_bool = global.get(\"raddr_bool\")\nvalue_bool = global.get(\"value_bool\")\n\n\nif(ip_bool && port_bool && rtype_bool && raddr_bool && value_bool) {\n    msg.enabled = true\n}\nelse {\n    msg.enabled = false\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 320,
+        "wires": [
+            [
+                "eb06ed9d.7f23f"
+            ]
+        ]
     },
     {
         "id": "1b214600.17935a",
